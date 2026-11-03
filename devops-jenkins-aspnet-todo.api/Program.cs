@@ -10,18 +10,26 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    // OpenAPI document: /openapi/v1.json
-    app.MapOpenApi();
+//// Configure the HTTP request pipeline.
+//if (app.Environment.IsDevelopment())
+//{
+//    // OpenAPI document: /openapi/v1.json
+//    app.MapOpenApi();
 
-    // Interactive API UI (Swagger-like): /scalar/v1
-    app.MapScalarApiReference(options =>
-    {
-        options.WithTitle("ToDo API");
-    });
-}
+//    // Interactive API UI (Swagger-like): /scalar/v1
+//    app.MapScalarApiReference(options =>
+//    {
+//        options.WithTitle("ToDo API");
+//    });
+//}
+// OpenAPI document: /openapi/v1.json
+app.MapOpenApi();
+
+// Interactive API UI (Swagger-like): /scalar/v1
+app.MapScalarApiReference(options =>
+{
+    options.WithTitle("ToDo API");
+});
 
 app.UseAuthorization();
 
