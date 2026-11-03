@@ -1,0 +1,6 @@
+@devops_jenkins_aspnet_todo.api_HostAddress = http://localhost:5246
+
+GET {{devops_jenkins_aspnet_todo.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
