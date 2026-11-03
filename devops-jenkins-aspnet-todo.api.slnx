@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="devops-jenkins-aspnet-todo.api/devops-jenkins-aspnet-todo.api.csproj" />
+  <Project Path="devops-jenkins-aspnet-todo.integrationtest/devops-jenkins-aspnet-todo.integrationtest.csproj" />
+  <Project Path="devops-jenkins-aspnet-todo.test/devops-jenkins-aspnet-todo.test.csproj" />
 </Solution>

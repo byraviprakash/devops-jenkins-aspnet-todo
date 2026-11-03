@@ -19,4 +19,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\devops-jenkins-aspnet-todo.api\devops-jenkins-aspnet-todo.api.csproj" />
+  </ItemGroup>
+
 </Project>
